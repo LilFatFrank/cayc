@@ -1,1 +1,15 @@
-{"name":"#5000","description":"#5000","image":"https://cakedapeyachtclub.com/metadata/assets/0.png","dna":"545c10c295b75660c15c61d9231215c93b4367f5","edition":5000,"date":1654153040491,"attributes":[{"trait_type":"Ape image","value":"4597"},{"trait_type":"Caked style","value":"Caked blue"},{"trait_type":"Edibles OnCake","value":"Chocolate"},{"trait_type":"Message OnCake","value":"Diamond hands"}],"compiler":"HashLips Art Engine"}
+{
+  "name": "#0",
+  "description": "#0",
+  "image": "https://cakedapeyachtclub.com/metadata/assets/0.png",
+  "dna": "545c10c295b75660c15c61d9231215c93b4367f5",
+  "edition": 0,
+  "date": 1654153040491,
+  "attributes": [
+    { "trait_type": "Ape image", "value": "4597" },
+    { "trait_type": "Caked style", "value": "Caked blue" },
+    { "trait_type": "Edibles OnCake", "value": "Chocolate" },
+    { "trait_type": "Message OnCake", "value": "Diamond hands" }
+  ],
+  "compiler": "HashLips Art Engine"
+}
