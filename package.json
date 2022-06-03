@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@emotion/react": "^11.9.0",
-    "@emotion/style": "^0.8.0",
+    "@emotion/styled": "^11.8.1",
     "@mui/lab": "^5.0.0-alpha.84",
     "@mui/material": "^5.8.2",
     "@mui/styles": "^5.8.0",
@@ -45,6 +45,7 @@
     "@web3-react/injected-connector": "^6.0.7",
     "ethers": "^5.6.8",
     "notistack": "^2.0.5",
+    "react-device-detect": "^2.2.2",
     "sass": "^1.52.2",
     "web3": "^1.7.3"
   }

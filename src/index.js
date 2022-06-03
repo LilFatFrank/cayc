@@ -1,16 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { AppContextProvider } from './context/Context';
+import Web3 from 'web3/dist/web3.min.js';
+import { Web3ReactProvider } from '@web3-react/core';
+
+function getLibrary(provider) {
+  return new Web3(provider);
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppContextProvider>
-      <App />
-    </AppContextProvider>
+    <Web3ReactProvider getLibrary={getLibrary}>
+      <AppContextProvider>
+        <App />
+      </AppContextProvider>
+    </Web3ReactProvider>
   </React.StrictMode>
 );
 

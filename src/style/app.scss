@@ -70,6 +70,40 @@
     width: 30%;
     padding: 20px;
     @include flex(column, center, center, 10px);
+    .label {
+      font-size: 16px;
+      color: var(--white);
+      width: 100%;
+      text-align: center;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      &.green {
+        color: var(--green);
+      }
+      &.red {
+        color: var(--red);
+      }
+    }
+    .count {
+      @include flex(row, center, space-between, 20px);
+      img {
+        cursor: pointer;
+      }
+      .num {
+        padding: 20px 50px;
+        border: 2px solid var(--yellow);
+        text-align: center;
+        color: var(--white);
+      }
+    }
+    .border {
+      border-top: 2px solid var(--yellow);
+      width: 100%;
+    }
+    .banana-label {
+      @include flex(row, center, center, 10px);
+    }
     .button {
       width: 100%;
       background: var(--yellow);
