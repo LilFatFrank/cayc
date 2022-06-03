@@ -1,0 +1,84 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+#app {
+  height: 100%;
+  background: var(--background);
+  @include flex(column, center, center, 20px);
+}
+
+.wrapper {
+  width: 80%;
+}
+
+.top {
+  width: 100%;
+  @include flex(row, center, space-between, "");
+  .top-left {
+    @include flex(row, center, center, 50px);
+    h1 {
+      color: var(--white);
+      font-style: italic;
+    }
+  }
+  h3 {
+    color: var(--yellow);
+    font-style: italic;
+  }
+}
+.middle-1 {
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  .border-top,
+  .border-bottom {
+    border-top: 2px solid var(--yellow);
+    position: absolute;
+    right: 70%;
+    left: 0;
+  }
+  .border-bottom {
+    bottom: 0;
+  }
+  .border-top {
+    top: 0;
+  }
+  .apes {
+    @include flex(row, center, space-around, "");
+  }
+}
+.middle-2 {
+  width: 100%;
+  .middle-2-left {
+    h2 {
+      color: var(--white);
+    }
+    @include flex(row, center, "", 50px);
+  }
+}
+.end {
+  width: 100%;
+  @include flex(row, flex-start, center, "");
+  .details {
+    width: 70%;
+    position: relative;
+    padding: 20px;
+    @include flex(row, center, space-around, "");
+    border-right: 2px solid var(--yellow);
+  }
+  .mint-area {
+    width: 30%;
+    padding: 20px;
+    @include flex(column, center, center, 10px);
+    .button {
+      width: 100%;
+      background: var(--yellow);
+      color: var(--background);
+      font-size: 24px;
+      font-weight: bold;
+      padding: 20px 40px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
